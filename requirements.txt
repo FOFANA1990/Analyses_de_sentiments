@@ -1,0 +1,45 @@
+# requirements.txt
+# Analyse de Sentiment — Critiques de Films IMDb
+
+# ── Manipulation et analyse des données ──────────────────────────────────────
+numpy>=1.24.0              # Calcul numérique (tableaux, matrices)
+pandas>=2.0.0              # Chargement et manipulation du DataFrame IMDb
+
+# ── Traitement du langage naturel (NLP) ──────────────────────────────────────
+nltk>=3.8.1                # Tokenisation, stopwords, lemmatisation, n-grammes
+                           # Modules NLTK nécessaires (à télécharger à l'exécution) :
+                           #   nltk.download('punkt')
+                           #   nltk.download('punkt_tab')
+                           #   nltk.download('stopwords')
+                           #   nltk.download('wordnet')
+                           #   nltk.download('omw-1.4')
+                           #   nltk.download('averaged_perceptron_tagger')
+
+emoji>=2.8.0               # Conversion des emojis en texte (demojize)
+textblob>=0.17.1           # Analyse de sentiment non supervisée (polarité)
+vaderSentiment>=3.3.2      # Analyse de sentiment non supervisée (score compound)
+
+# ── Représentation vectorielle du texte ──────────────────────────────────────
+scikit-learn>=1.3.0        # TF-IDF, SVM (LinearSVC), Random Forest,
+                           # train_test_split, confusion_matrix,
+                           # classification_report, ConfusionMatrixDisplay
+gensim>=4.3.0              # Word2Vec (embeddings de mots)
+
+# ── Visualisation ─────────────────────────────────────────────────────────────
+matplotlib>=3.7.0          # Graphiques : bar plots, histogrammes, matrices de confusion
+wordcloud>=1.9.3           # Nuages de mots (WordCloud)
+
+# ── Accès aux données Kaggle (environnement Kaggle uniquement) ────────────────
+kagglehub>=0.2.0           # Téléchargement automatique du dataset IMDb depuis Kaggle
+                           # (non nécessaire si le CSV est disponible localement)
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/FOFANA1990/Analyses_de_Sentiments.git
+git push -u origin main
+
+git remote add origin https://github.com/FOFANA1990/Analyses_de_Sentiments.git
+git branch -M main
+git push -u origin main
