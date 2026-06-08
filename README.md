@@ -45,7 +45,7 @@ Cette fonction centrale applique 9 étapes de nettoyage dans l'ordre :
 | Étape | Action | Exemple |
 |-------|--------|---------|
 | 1 | Mise en minuscules | `"Great Movie"` → `"great movie"` |
-| 2 | Conversion emojis | `"😊"` → `":smiling_face:"` puis supprimé |
+| 2 | Conversion emojis | `" "` → `":smiling_face:"` puis supprimé |
 | 3 | Suppression balises HTML | `"<br />"` → `" "` |
 | 4 | Suppression retours à la ligne | `"\n"` → `" "` |
 | 5 | Suppression accents (normalisation Unicode) | `"é"` → `"e"` |
